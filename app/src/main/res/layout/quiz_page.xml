@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Timer Display -->
+    <TextView
+        android:id="@+id/textViewTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timer: 00:00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Question 1 Label -->
+    <TextView
+        android:id="@+id/textViewQuestion1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question 1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:gravity="start" />
+
+    <!-- Question 1 EditText -->
+    <EditText
+        android:id="@+id/editTextQuestion1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/white"
+        android:gravity="top|start"
+        android:hint="Enter Question 1"
+        android:minHeight="100dp"
+        android:padding="16dp"
+        android:textSize="16sp" />
+
+    <!-- Choices A, B, and C for Question 1 -->
+    <EditText
+        android:id="@+id/editTextChoiceA1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Choice A"
+        android:gravity="top|start"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:minHeight="80dp"
+        android:background="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextChoiceB1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Choice B"
+        android:gravity="top|start"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:minHeight="80dp"
+        android:background="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextChoiceC1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Choice C"
+        android:gravity="top|start"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:minHeight="80dp"
+        android:background="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Radio Buttons to choose the correct answer -->
+    <RadioGroup
+        android:id="@+id/radioGroupCorrectAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choice A"
+            android:padding="8dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choice B"
+            android:padding="8dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choice C"
+            android:padding="8dp" />
+    </RadioGroup>
+
+    <!-- Start Quiz Button -->
+    <Button
+        android:id="@+id/buttonStartQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Quiz"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="16dp" />
+
+    <!-- Finish Quiz Button -->
+    <Button
+        android:id="@+id/buttonFinishQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish Quiz"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="16dp"
+        android:enabled="false" />
+</LinearLayout>

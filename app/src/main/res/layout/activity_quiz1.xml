@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- com.example.kuwizzz.Question Input -->
+    <EditText
+        android:id="@+id/editTextQuestion1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your question"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:inputType="text" />
+
+    <!-- Choices Input -->
+    <EditText
+        android:id="@+id/editTextChoiceA1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Choice A"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextChoiceB1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Choice B"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextChoiceC1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Choice C"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:inputType="text" />
+
+    <!-- Correct Answer (Radio Buttons) -->
+    <RadioGroup
+        android:id="@+id/radioGroupCorrectAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choice A" />
+
+        <RadioButton
+            android:id="@+id/radioButtonB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choice B" />
+
+        <RadioButton
+            android:id="@+id/radioButtonC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choice C" />
+    </RadioGroup>
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/buttonAddQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Question"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonFinishQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish Quiz"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="16dp"
+        android:enabled="false" />
+</LinearLayout>

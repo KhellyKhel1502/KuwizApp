@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Question Label (Bold) -->
+    <TextView
+        android:id="@+id/textViewQuestion1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question 1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:gravity="start" />
+
+    <!-- Question EditText -->
+    <EditText
+        android:id="@+id/editTextQuestion1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/white"
+        android:gravity="top|start"
+        android:hint="Enter Question "
+        android:minHeight="100dp"
+        android:padding="16dp"
+        android:textSize="16sp" />
+
+    <!-- Choice A for Question 1 -->
+    <EditText
+        android:id="@+id/editTextChoiceA1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Choice A"
+        android:gravity="top|start"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:minHeight="80dp"
+        android:background="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Choice B for Question 1 -->
+    <EditText
+        android:id="@+id/editTextChoiceB1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Choice B"
+        android:gravity="top|start"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:minHeight="80dp"
+        android:background="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Choice C for Question 1 -->
+    <EditText
+        android:id="@+id/editTextChoiceC1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Choice C"
+        android:gravity="top|start"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:minHeight="80dp"
+        android:background="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+    <!-- TextView for Correct Answer Selection -->
+    <TextView
+        android:id="@+id/textViewSelectCorrectAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please select the correct answer:"
+        android:textSize="16sp"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:gravity="start" />
+
+    <!-- RadioGroup for Correct Answer -->
+    <RadioGroup
+        android:id="@+id/radioGroupCorrectAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choice A"
+            android:padding="8dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choice B"
+            android:padding="8dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choice C"
+            android:padding="8dp" />
+    </RadioGroup>
+
+    <!-- Add Question Button -->
+    <Button
+        android:id="@+id/buttonAddQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Question"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="16dp" />
+
+    <!-- Finish Quiz Button -->
+    <Button
+        android:id="@+id/buttonFinishQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish Making Quiz"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="16dp"
+        android:enabled="false" />
+</LinearLayout>

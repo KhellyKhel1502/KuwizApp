@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Kuwiz</string>
+    <string name="welcome_message">Welcome back, Student A!</string>
+    <string name="search_hint">Search for lessons to review</string>
+    <string name="generate_study_guides">Generate Study Guides</string>
+    <string name="set_reminder">Set Reminder</string>
+    <string name="search_study_materials">Search for Study Materials</string>
+    <string name="pomodoro_technique">What is Pomodoro Technique?</string>
+    <string name="create_quiz">Create Quiz</string>
+
+
+</resources>

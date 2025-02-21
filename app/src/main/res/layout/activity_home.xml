@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:gravity="center">
+
+        <!-- Welcome Text inside a CardView -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="#FFFFFF"
+            android:padding="40dp">
+
+            <TextView
+                android:id="@+id/welcomeMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:padding="10dp"
+                android:text="@string/welcome_message"
+                android:textColor="@color/black"
+                android:textSize="50sp" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Create Quiz Button -->
+        <Button
+            android:id="@+id/createQuizButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create_quiz"
+            android:background="@drawable/button_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:onClick="onCreateQuizClicked" />
+
+        <!-- Set Reminder Button -->
+        <Button
+            android:id="@+id/setReminderButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/set_reminder"
+            android:background="@drawable/button_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:onClick="onSetReminderClicked" />
+
+        <!-- Pomodoro Technique Link -->
+        <TextView
+            android:id="@+id/pomodoroTechniqueLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pomodoro_technique"
+            android:textColor="#FF0000"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Paste your text here"
+        android:gravity="top|start"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:minHeight="150dp"
+        android:background="@color/gray"/>
+
+    <Button
+        android:id="@+id/AddQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:padding="12dp"
+        android:layout_marginTop="5dp"
+        android:text="Add Question"
+        android:textColor="@color/white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:layout_weight="1" />  <!-- Pushes the button to the bottom -->
+
+    <Button
+        android:id="@+id/generateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:padding="16dp"
+        android:text="Generate Flashcards"
+        android:textColor="@color/white"/>
+</LinearLayout>
